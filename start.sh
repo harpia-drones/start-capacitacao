@@ -46,7 +46,7 @@ if [ ! -f "$DEP_FLAG_FILE" ]; then
     echo ">> Cloning config folder..."
     echo " "
     cd "/root" && \
-    git clone git@github.com:harpia-drones/config.git && \
+    git clone git@github.com:harpia-drones/config-capacitacao.git && \
     chmod -R a+x /root/config 
 
     # Clone dependencies folder 
@@ -54,7 +54,7 @@ if [ ! -f "$DEP_FLAG_FILE" ]; then
     echo ">> Cloning dependencies folder..."
     echo " "
     cd "/root" && \
-    git clone git@github.com:harpia-drones/dependencies.git && \
+    git clone git@github.com:harpia-drones/dependencies-capacitacao.git && \
 
     if [ $? -eq 0 ]; then
         echo ""
